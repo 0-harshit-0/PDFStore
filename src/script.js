@@ -7,6 +7,7 @@ let res = document.querySelector("#result");
 
 let url;
 function print(data) {
+	res.innerHTML = '';
 	for (var i = 0; i < data.items.length; i++) {
 		if (data.items[i].fileFormat == "PDF/Adobe Acrobat") {
 			let li = document.createElement("li");
