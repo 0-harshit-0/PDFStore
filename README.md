@@ -1,2 +1,2 @@
 # PDFStore
-search and downlaod any pdf
+search and download any pdf
