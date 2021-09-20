@@ -16,7 +16,8 @@ function print(data) {
 		}
 	}
 }
-search.onclick = () => {
+function go() {
+	
 	url = `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${searchID}&q=intitle:${tinp.value} filetype:pdf`;
 	
 	fetch(url).then((response) => {
@@ -25,5 +26,13 @@ search.onclick = () => {
 			print(data);
 		});
 	})
-}
 
+}
+search.onclick = () => {
+	go();
+}
+addEventListener("keypress", (e) => {
+	if (e.key == "Enter") {
+		go();
+	}
+});

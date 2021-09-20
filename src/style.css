@@ -28,7 +28,6 @@ body{
 	grid-template-rows: 10% 5% auto;
 	justify-content: center;
 
-	border: solid;
 }
 
 .heading{
